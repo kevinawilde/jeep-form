@@ -1,38 +1,115 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<meta charset="UTF-8">
-	<title></title>
-</head>
-<body>
-	<header id="header" class="">
-		
-	</header><!-- /header -->
-	<nav>
-		<ul>
-			<li><a href="" title=""></a></li>
-		</ul>
-	</nav>
-	<section>
-		<aside>
+	<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<meta charset="UTF-8">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<title></title>
+	</head>
+	<body>
+		<header id="header" class="">
 			
-		</aside>
-		<div>
-			
-			<article>
+			</header><!-- /header -->
+			<nav class="navbar navbar-expand-lg navbar-dark" id="navigationBar">
+				<a class="navbar-brand" href="#"><img src="logo-jeep.png" alt=""></a>
+				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class= "navbar-nav mr-auto">
+						<li><a href="" title=""></a></li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">VEHICLES<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">SHOPPING TOOLS</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">CAPABILITIES</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">JEEP LIFE</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">OWNERS</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<section class="row" id="body-section">
+				<aside class="bodyDiv col-2">
+					
+				</aside>
+				<div class="col-8" id="padding-form">
+					
+					<form action="index_submit" method="get" accept-charset="utf-8">
+						<div class="form-group row">
+							<label for="example-first-name">First Name</label>
+							<input type="text" class="form-control" id="example-first-name" placeholder="John">
+						</div>
+						<div class="form-group row">
+							<label for="example-last-name">Last Name</label>
+							<input type="text" class="form-control" id="example-last-name" placeholder="Doe">
+						</div>
+						<div class="form-group row">
+							<label for="example-email-input">Email address</label>
+							<input type="email" class="form-control" id="example-email-input" placeholder="name@example.com">
+						</div>
+						<div class="form-group row">
+							<label for="example-phone-number">Home Phone</label>
+							<input type="tel" class="form-control" id="example-phone-number" placeholder="(555)-555-5555">
+						</div>
+						<div class="form-group row">
+							<label for="example-date-of-birth">Date of Birth</label>
+							<input type="email" class="form-control" id="example-date-of-birth" placeholder="12/12/1991">
+						</div>
+						<div class="form-group row">
+							<label for="example-address">Street Address</label>
+							<input type="text" class="form-control" id="example-address" placeholder="123 Example Street">
+						</div>
+						<div class="form-group row">
+							<label for="example-city">City</label>
+							<input type="text" class="form-control" id="example-city" placeholder="Exampletown">
+						</div>
+						<div class="form-group row">
+							<label for="example-state">State</label>
+							<input type="text" class="form-control" id="example-state" placeholder="Examplefornia">
+						</div>
+						<div class="form-group row">
+							<label for="example-zip">Zip Code</label>
+							<input type="email" class="form-control" id="example-zip" placeholder="name@example.com">
+						</div>
+						<div class="form-group row">
+							<label for="example-description">Description</label>
+							<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="What are you looking for?">
+						</div>
+						<form>
+							<div class="form-group">
+								<label for="sel1">Model</label>
+								<select class="form-control" id="sel1">
+									<option>Wrangler</option>
+									<option>Grand Cherokee</option>
+									<option>Cherokee</option>
+									<option>Compass</option>
+									<option>Renegade</option>
+									<option>Gladiator</option>
+								</select>
+							</div>
+						</form>
+					</form>
+					<div id="bottom-space">
+						
+					</div>
+				</div>
+				<aside class="bodyDiv col-2">
+					
+				</aside>
+			</section>
+			<footer>
 				
-			</article>
-
-
-		</div>
-		<aside>
-			
-		</aside>
-
-	</section>
-	<footer>
-		
-	</footer>
-</body>
-</html>
+			</footer>
+		</body>
+	</html>
